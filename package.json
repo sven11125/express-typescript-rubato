@@ -1,0 +1,74 @@
+{
+  "name": "appengine-typescript",
+  "description": "Express API",
+  "version": "0.0.1",
+  "private": true,
+  "license": "Owned by Polydelic",
+  "author": "Oliver Dixon | Polydelic AS",
+  "scripts": {
+    "build": "tsc -p .",
+    "dev": "GOOGLE_APPLICATION_CREDENTIALS=service_account.json NODE_ENV=dev nodemon",
+    "start": "GOOGLE_APPLICATION_CREDENTIALS=service_account.json NODE_ENV=production node ./dist/index.js",
+    "deploy": "npm run test && npm run docker-build && npm run docker-push && npm run docker-deploy-build",
+    "build-docs": "rm -rf ./docs && mkdir ./docs && touch ./docs/index && apidoc -f .*\\.ts$ -i src/ -o docs/",
+    "docker-build": "npm run build-docs && docker build --platform linux/amd64 -t rubato . && docker tag rubato eu.gcr.io/rubato-a580f/rubato",
+    "docker-run": "docker run --platform linux/amd64 -it -p 3000:8080 rubato",
+    "docker-setup": "gcloud auth configure-docker --project rubato-a580f",
+    "docker-push": "docker push eu.gcr.io/rubato-a580f/rubato",
+    "docker-deploy-build": "y | gcloud app deploy --project rubato-a580f --image-url=eu.gcr.io/rubato-a580f/rubato",
+    "test": "TEST_MODE=TRUE GOOGLE_APPLICATION_CREDENTIALS=service_account.json NODE_ENV=dev ava"
+  },
+  "ava": {
+    "extensions": [
+      "ts"
+    ],
+    "require": [
+      "ts-node/register"
+    ]
+  },
+  "dependencies": {
+    "@google-cloud/logging-winston": "2.1.0",
+    "@types/bcrypt": "^3.0.0",
+    "@types/config": "^0.0.38",
+    "@types/express-rate-limit": "^5.1.1",
+    "@types/in-app-purchase": "^1.11.0",
+    "@types/jsonwebtoken": "^8.5.1",
+    "@types/jwt-then": "^1.0.0",
+    "@types/mongodb": "^3.6.8",
+    "@types/multer": "^1.4.5",
+    "@types/spotify-api": "0.0.4",
+    "@types/supertest": "^2.0.10",
+    "axios": "0.19.2",
+    "bcrypt": "^5.0.1",
+    "config": "^3.3.6",
+    "cors": "^2.8.5",
+    "express": "4.16.3",
+    "express-promise-router": "3.0.3",
+    "express-rate-limit": "^5.2.6",
+    "firebase-admin": "8.10.0",
+    "google-play-billing-validator": "2.1.1",
+    "in-app-purchase": "^1.11.4",
+    "install": "^0.13.0",
+    "joi": "^17.4.0",
+    "jwt-then": "^1.0.1",
+    "mongodb": "^3.6.5",
+    "multer": "^1.4.2",
+    "nexmo": "^2.9.1",
+    "npm": "^7.6.0",
+    "querystring": "^0.2.0",
+    "sharp": "^0.27.0",
+    "supertest": "^4.0.2",
+    "ts-node": "8.4.1",
+    "unique-names-generator": "^4.4.0",
+    "winston": "3.2.1"
+  },
+  "devDependencies": {
+    "@google-cloud/nodejs-repo-tools": "3.3.0",
+    "@polydelic/apidoc-plugin-ts": "^1.0.4",
+    "@types/express": "4.16.0",
+    "apidoc": "^0.20.1",
+    "ava": "^1.4.1",
+    "nodemon": "2.0.2",
+    "typescript": "3.8.3"
+  }
+}

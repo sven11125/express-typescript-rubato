@@ -1,0 +1,14 @@
+{
+    "productName": "Rubato-prod",
+    "productId": "rubato-a580f",
+    "clientEmail": "rubato-a580f@appspot.gserviceaccount.com",
+    "privateKey": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCt775GhNgeINuC\nvCXc9BvBs3exRXRCVXoqzsEarEbqXe6ZWNGDwaUtkz2iAc7TXMBFVHNPc4IRrJyq\nTDgU4dWyY0kVMhWUE8F7WevRaBp8EhboKGbfwbzDJlVW3OK0U4qfzomiQMUqPUdj\nuioprEBJ1gIzNc/WOOxOAT8HpJuYA7pLkoFQOv5kD+CMV2OX+zoNottxoYW8RBYc\n9gFq8HuY1cpTnivuM+75cnSMb5Hor8ZGsy7xet0ejwg0d5mi5geyQOU8wddNeHl6\ntQVlJY9zS6gvg1ysxv1g0fyufU0wQFlw61zk/Cy2gty1bD0tPDtFiDWcgk0b7N73\ng0aDvCfNAgMBAAECggEAG/ACmXQT/H7dkzmiQUOqQ6oOYxhbTJ5LIZ4U8TJTr6hH\nvzS/blDHtbLNNvzgWh2vOlOOs+fDMBCQF2Bnr574go8k+XUSdzbXIHd4g6mbe2sy\nZ7a5k14cciHxmiKffURf4zw66idKI/c0xMVtqUTkDJgFwXD2wZtiBUN4+sLLRRas\nWs2WZWEaQeO1p1kqOj1yegec4nCj8/Lx0C6dZx2mqEHKzyjMA3ASIaynSwiUqs89\nbIRyq9hsXfOuq/E3hWaD2LS0pUHHBVICJ1nq9TFaQi29uDkBoIu05EoocjmF4CVd\n6Poe2T7zmtjh5mDAod7sU91X4fGfe1TQ10ii3DoSBwKBgQDbQVFuGEBR5JxLQT+R\nAeR9P4r5M10QaE1ppjWRkkTtXP3NfoPXDtxkwcyrGP9veEvq07AwROacx7AqUDy0\nPqXceKiD87iuTsvIn4Wf9yku+4u0HJTjCykiTVlqfVze0z8PKzgcy5chMBwYj0g/\nUKXKloy8oKV5/IZheY7Gij5VewKBgQDLFh+hfS46XcUKYOZkJ0W98tmj0EgShwyg\nvR9E3jnRhzxRAO+x8ywqDUOJYF/iWPLA3JkmxR2BfphsD4vCcQebkFqi4Ef1bDvJ\nsJyrMAlNyiHkDFj8gX6YL2aa9kMMLlqs5FYGibtPZ+SQuyezO+tGMLLigvtlbioK\nKoocRIThVwKBgG8HFZg9uZx+utK0+N6SacUu/04QP4lGeCUO4MOVoUfdtjxwW4z0\n3pA7P0xJPViSP0dr6SWYTnuH92KF/Sd9LfqGMzeWnKfQCQvQFBecToOXJ/iOHKsY\nhLz1FFmDoBrKOH2S8jhKtH4+4YtiS0Ccs0fyktQWOZWbVeVYa/+IE+avAoGAX4VL\nYWCIoslCCWykUM0r/3i/J06q55P/u4bYs0K2/TdXhl4jX5aZ2jmc33ul/ceKfm4D\n1vl1tFfAB2uUd+NECcZu6xcEoYnD4Uyhk98nMSB2qlWocTPTQG9jGlXkGVGgMpu/\nXpnfsSyTlAODW8k+EyiKqwGijwWu3lM93KfZvEcCgYAhR0McXB0QVXUQ+x//DX/k\nJM/vlEBGkTi3menn2RkLAS5exzPRZrXk5ifkmVz1qTZZanzZhzLdFtM0bSPRsypP\nTs9DKW3XD3A6A65lqkAjVkm7z2SYji6bkj6enCR95oZCKPjmw1y6lszQJN4lJw0B\nJMP0psxpYOUFnq7cJp9B9Q==\n-----END PRIVATE KEY-----\n",
+    "storageBucket": "gs://rubato-a580f.appspot.com",
+    "googleCloudApiKey": "AIzaSyDKGmORYrxhynA4VaZU534fPbMT-7Y4XPo",
+    "jwtSecret": "yA47Ag33C#mQ@XEED53D#xb8?4NSGkhq&ffsT7@mAR?h7TL9@&mfGjccsPo4Nn6mbMYPt",
+    "dummyProfilePhotos": [
+        "https://firebasestorage.googleapis.com/v0/b/rubato-a580f.appspot.com/o/dummy_photos%2Fprofile.png?alt=media&token=0c95780a-72d1-4403-a324-13f4431c4d0d"
+    ],
+    "monogUrl": "mongodb+srv://mongo_db:b80Qq9KRkfaW3HeX@cluster0.ir17f.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+    "mongoDatabase": "rubato"
+}

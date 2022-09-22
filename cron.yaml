@@ -1,0 +1,4 @@
+cron:
+    - description: "Checker"
+      url: /api/run-checks
+      schedule: every 4 minutes

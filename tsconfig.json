@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "es2016",
+    "module": "commonjs",
+    "resolveJsonModule": true,
+    "outDir": "./dist",
+    "typeRoots": [
+      "@types",
+      "node_modules/@types",
+    ]
+  },
+  "include": [
+    "*.ts",
+    "tests/test.ts"
+  ]
+}
